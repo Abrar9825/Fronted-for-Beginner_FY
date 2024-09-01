@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 100vh;
+        background: url('bg.jpg')no-repeat center center/cover;
+    }
+
+    .con {
+        margin-top: 50px;
+        width: 850px;
+        position: relative;
+        height: 550px;
+        background-image: linear-gradient(200deg, rgb(213, 164, 188), rgb(230, 230, 185), rgb(215, 177, 177));
+        border-radius: 20px;
+    }
+
+    .con .clip {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 4s;
+        border-radius: 20px;
+        opacity: 0.5;
+
+
+    }
+
+    .con .clip.clip1 {
+        clip-path: polygon(0 0, 48% 0, 36% 100%, 0 100%);
+        background-size: cover;
+        background-image: linear-gradient(200deg, rgb(128, 28, 78), rgb(213, 213, 44), rgb(196, 67, 67));
+        animation: con 5s ease-in 1;
+
+
+    }
+
+    .con .clip.clip2 {
+        clip-path: polygon(40% 0, 63% 0, 83% 100%, 26% 100%);
+        background-size: cover;
+        background-image: linear-gradient(180deg, rgb(74, 164, 197), rgb(220, 193, 85), rgb(121, 156, 239));
+        animation: con1 5s ease-in 5.5s 1;
+
+
+    }
+
+    .con .clip.clip3 {
+        clip-path: polygon(60% 0, 100% 0, 100% 100%, 80% 100%);
+        background-size: cover;
+        background-image: linear-gradient(160deg, rgba(197, 103, 103, 0.509), rgb(108, 220, 97), rgb(122, 178, 241));
+        animation: con2 5s ease-in 10s 1;
+
+
+    }
+
+
+
+    @keyframes con {
+        0% {
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+            background: url('winter.jpg')no-repeat center center/cover;
+
+
+        }
+
+
+        100% {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            background: url('winter.jpg')no-repeat center center/cover;
+
+
+
+        }
+    }
+
+    @keyframes con1 {
+        0% {
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+            background: url('mon.jpg')no-repeat center center/cover;
+
+
+
+
+        }
+
+        100% {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            background: url('mon.jpg')no-repeat center center/cover;
+
+
+        }
+    }
+
+    @keyframes con2 {
+        0% {
+
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+            background: url('rain.jpg')no-repeat center center/cover;
+
+
+        }
+
+        100% {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            background: url('rain.jpg')no-repeat center center/cover;
+
+        }
+    }
+
+    .con:hover .clip {
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+
+    }
+
+    .con .clip.clip1:hover {
+        transform: rotateY(180deg);
+        background: url('winter.jpg')no-repeat center center/cover;
+
+    }
+
+    .con .clip.clip2:hover {
+        transform: rotateY(180deg);
+        background: url('mon.jpg')no-repeat center center/cover;
+
+    }
+
+    .con .clip.clip3:hover {
+        transform: rotateY(180deg);
+
+        background: url('rain.jpg')no-repeat center center/cover;
+
+    }
+
+    .con .clip:hover {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .btn {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        font-size: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        transition: 2s;
+    }
+
+    body:hover .con .clip.clip.clip1 {
+        background: url('winter.jpg')no-repeat center center/cover;
+        opacity: 3;
+
+    }
+
+    body:hover .con .clip.clip.clip2 {
+        background: url('mon.jpg')no-repeat center center/cover;
+        opacity: 3;
+
+
+
+    }
+
+    body:hover .con .clip.clip.clip3 {
+        background: url('rain.jpg')no-repeat center center/cover;
+        opacity: 3;
+
+
+    }
+
+    h3 {
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-shadow: 2px 2px 2px blue, 2px 2px 2px pink, 12px 12px 2px black;
+        color: white;
+        padding-top: 600px;
+        font-weight: 800;
+        font-size: xx-large;
+        animation: head 5s ease-in 1;
+
+
+    }
+
+    @keyframes head {
+        0% {
+            transform: scale(1);
+
+        }
+
+        100% {
+            transform: scale3d(1, 1, 1);
+            padding-top: 400px;
+
+        }
+    }
+
+    @media (max-width: 991px) {
+        body {
+            background: none;
+            background-color: rgb(234, 147, 191);
+        }
+
+        .con {
+            height: 500px;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        body {
+            background: none;
+            background-color: rgb(234, 147, 191);
+
+        }
+
+        .con {
+            height: 500px;
+            width: 100%;
+        }
+
+        @media (max-width: 450px) {
+            body {
+                background: none;
+                background-color: rgb(234, 147, 191);
+
+            }
+
+            .con {
+                height: 500px;
+                width: 100%;
+            }
+        }
+    }
+</style>
+
+<body>
+    <div class="con">
+        <div class="clip clip1"></div>
+        <div class="clip clip2"></div>
+        <div class="clip clip3"></div>
+
+        <h3>Made By Abrar Shaikh</h3>
+    </div>
+
+</body>
+
+</html>

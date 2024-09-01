@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: li;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: cursive;
+
+
+    }
+
+    table {
+        margin-top: 70px;
+        background-color: white;
+        color: black;
+        padding: 40px;
+        height: 400px;
+        width: 500px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 40px rgb(112, 186, 198), -2px -2px 40px rgb(112, 186, 198), 2px 2px 40px rgb(139, 198, 111), -2px -2px 40px rgb(81, 81, 214);
+
+    }
+
+    table::before {
+        content: "";
+        top: 0px;
+        left: 0;
+        position: absolute;
+        background-image: linear-gradient(200deg, rgb(191, 150, 150), rgb(143, 224, 224), rgb(182, 130, 170));
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+    }
+
+    input {
+        padding: 5px;
+    }
+
+    button {
+        padding: 10px;
+        width: 120px;
+        border-radius: 10px;
+        background-image: linear-gradient(200deg, rgb(191, 150, 150), rgb(143, 224, 224), rgb(182, 130, 170));
+        margin-top: 30px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <table>
+        <tr>
+            <th>
+                <h1>Sign Up Form</h1>
+            </th>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td>last Name</td>
+
+        </tr>
+        <tr>
+            <td><input type="text" value="Adnan "></td>
+            <td><input type="text" value="Shaikh"></td>
+        </tr>
+        <tr>
+            <td>Birathday</td>
+            <td>Gender</td>
+
+        </tr>
+        <tr>
+            <td><input type="date" value="Adnan "></td>
+            <td><input type="radio" name="g1">Male
+                <input type="radio" name="g1">Female
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>Phone Number</td>
+
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="adnan123@gamil.com "></td>
+            <td><input type="text" placeholder="1234567890"></td>
+        </tr>
+        <tr>
+            <td>Subject</td>
+
+        </tr>
+        <tr>
+            <td><input type="text" value=""></td>
+        </tr>
+        <tr>
+            <td><button>Submit</button></td>
+        </tr>
+
+
+    </table>
+</body>
+
+</html>

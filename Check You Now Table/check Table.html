@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function abrar() {
+
+        let flag = 0;
+        var a1 = document.getElementById("1").value;
+        var a2 = document.getElementById("2").value;
+        var a3 = document.getElementById("3").value;
+        var a4 = document.getElementById("4").value;
+        var a5 = document.getElementById("5").value;
+        var a6 = document.getElementById("6").value;
+        var a7 = document.getElementById("7").value;
+        var a8 = document.getElementById("8").value;
+        var a9 = document.getElementById("9").value;
+        var a10 = document.getElementById("10").value;
+
+        if (a1 == "") {
+
+            alert("Plese Fill Answer in The first Block : ");
+        }
+        if (a1 != 1) {
+            document.getElementById("1").style.border = "4px solid red";
+        }
+        else {
+            document.getElementById("1").style.border = "4px solid Green";
+            flag++;
+        }
+
+        if (a2 == "") {
+            alert("Plese Fill Answer in The Second Block : ");
+        }
+        if (a2 != 2) {
+            document.getElementById("2").style.border = "4px solid red";
+        }
+        else {
+            document.getElementById("2").style.border = "4px solid Green";
+            flag++;
+        }
+
+        if (a3 == "") {
+            alert("Plese Fill Answer in The Thired Block : ");
+        }
+        if (a3 != 3) {
+            document.getElementById("3").style.border = "4px solid red";
+        }
+        else {
+            document.getElementById("3").style.border = "4px solid Green";
+            flag++;
+        }
+
+        if (a4 == "") {
+            alert("Plese Fill Answer in The Fourth Block : ");
+        }
+        if (a4 != 4) {
+            document.getElementById("4").style.border = "4px solid red";
+        }
+        else {
+            document.getElementById("4").style.border = "4px solid Green";
+            flag++;
+        }
+
+        if (a5 == "") {
+            alert("Plese Fill Answer in The Fifth Block : ");
+        }
+        if (a5 != 5) {
+            document.getElementById("5").style.border = "4px solid red";
+        }
+        else {
+            document.getElementById("5").style.border = "4px solid Green";
+            flag++;
+        }
+
+        if (a6 == "") {
+            alert("Plese Fill Answer in The Sixth Block : ");
+        }
+        if (a6 != 6) {
+            document.getElementById("6").style.border = "4px solid red";
+        }
+        else {
+            document.getElementById("6").style.border = "4px solid Green";
+            flag++;
+        }
+
+        if (a7 == "") {
+            alert("Plese Fill Answer in The seventh Block : ");
+
+        }
+        if (a7 != 7) {
+            document.getElementById("7").style.border = "4px solid red";
+        }
+        else {
+            document.getElementById("7").style.border = "4px solid Green";
+            flag++;
+        }
+
+        if (a8 == "") {
+            alert("Plese Fill Answer in The Eighth Block : ");
+        }
+        if (a8 != 8) {
+            document.getElementById("8").style.border = "4px solid red";
+        }
+        else {
+            document.getElementById("8").style.border = "4px solid Green";
+            flag++;
+        }
+
+        if (a9 == "") {
+            alert("Plese Fill Answer in The Nineth Block : ");
+        }
+        if (a9 != 9) {
+            document.getElementById("9").style.border = "4px solid red";
+        }
+        else {
+            document.getElementById("9").style.border = "4px solid Green";
+            flag++;
+        }
+
+        if (a10 == "") {
+            alert("Plese Fill Answer in The Tenth Block : ");
+        }
+        if (a10 != 10) {
+            document.getElementById("10").style.border = "4px solid red";
+        }
+        else {
+            document.getElementById("10").style.border = "4px solid Green";
+            flag++;
+        }
+
+        document.getElementById("h2").innerHTML = "You Got : " + flag + " : Answers Correct Out Of 10";
+
+    }
+</script>
+
+<body style="text-align:center ;background-color: lightpink;">
+    <h1>Multiplaction Chart</h1>
+    <h2>1 x 1 = <input id="1" type="number"> </h2>
+    <h2>1 x 2 = <input id="2" type="number"> </h2>
+    <h2>1 x 3 = <input id="3" type="number"> </h2>
+    <h2>1 x 4 = <input id="4" type="number"> </h2>
+    <h2>1 x 5 = <input id="5" type="number"> </h2>
+    <h2>1 x 6 = <input id="6" type="number"> </h2>
+    <h2>1 x 7 = <input id="7" type="number"> </h2>
+    <h2>1 x 8 = <input id="8" type="number"> </h2>
+    <h2>1 x 9 = <input id="9" type="number"> </h2>
+    <h2>1 x 10 = <input id="10" type="number"> </h2>
+
+
+    <h2 id="h2"></h2>
+
+    <input type="button" value="submit" onclick="abrar()">
+
+    <h2>Made By Abrar SHiakh </h2>
+    <h3>Any Kind Of problam Contact Me 9875009490</h3>
+
+</body>
+
+</html>

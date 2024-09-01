@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        background-image: linear-gradient(#d9a7c7, #fffcdc);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    form {
+        background-image: linear-gradient(#36d1dc, #5b86e5);
+        display: inline-block;
+        border-radius: 10%;
+        height: 100%;
+        box-shadow: 0 0 15px rgba(255, 0, 200, 0.749);
+    }
+
+    table {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+
+    }
+
+    input {
+        border-radius: 10%;
+    }
+
+    .area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    textarea {
+        width: 500px;
+        font-size: large;
+        border-radius: 10%;
+    }
+
+    input {
+        padding: 15px;
+        padding-left: 12px;
+        font-size: 20px;
+    }
+
+    td {
+        padding-bottom: 10px;
+    }
+
+    .button {
+        margin-top: 10px;
+        height: 40px;
+        margin-bottom: 20px;
+        width: 100px;
+        padding-bottom: 30px;
+        cursor: pointer;
+        animation: btn .5s infinite;
+    }
+
+    @keyframes btn {
+        from {
+            transform: scale(1.2);
+        }
+    }
+</style>
+
+<body>
+    <form action="">
+        <h1>Addmission Form</h1>
+        <table>
+            <tr>
+                <td>First Name : </td>
+                <td>Last Name : </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="" id="" placeholder="First Name"></td>
+                <td><input type="text" name="" id="" placeholder="Last Name"></td>
+            </tr>
+            <tr>
+                <td>Parant's Name : </td>
+                <td>Age : </td>
+            </tr>
+            <tr>
+                <td><input type="number" name="" id="" placeholder="Parant's Name"></td>
+                <td><input type="text" name="" id="" placeholder="Age"></td>
+            </tr>
+            <tr>
+                <td>Designation : </td>
+                <td>Fees : </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="" id="" placeholder="Designation"></td>
+                <td><input type="number" name="" id="" placeholder="Fees"></td>
+            </tr>
+            <tr>
+                <td>Adhar Card : </td>
+                <td>Birth Certificate : </td>
+            </tr>
+            <tr>
+                <td><input type="file" name="" id=""></td>
+                <td><input type="file" name="" id=""></td>
+            </tr>
+        </table>
+        <div class="area">
+            <tr>
+                <td>Address</td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea name="" id="" cols="5" rows="10" placeholder=" Type Your Address"></textarea>
+                </td>
+            </tr>
+            <a href="index.html">
+                <input class="button"  type="button" value="Submit">
+            </a>
+        </div>
+    </form>
+</body>
+</html>

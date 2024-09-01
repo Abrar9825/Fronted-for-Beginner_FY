@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(254, 235, 235);
+}
+
+nav {
+    background-color: rgb(200, 197, 197);
+    padding: 20px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+section ul {
+    background-color: blue;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav ul li {
+    font-size: 30px;
+}
+
+nav ul .on1 {
+    margin-left: 20px;
+}
+
+nav ul .on2 {
+    margin-left: 85px;
+}
+
+nav ul .on3 {
+    margin-left: 100px;
+}
+
+nav ul .on4 {
+    margin-left: 100px;
+}
+
+.cont img {
+    height: 80px;
+    width: 90px;
+    border-radius: 100%;
+    background-color: green;
+}
+
+.cont ul {
+    background-color: rgb(254, 235, 235);
+    border: 2px solid gray;
+}
+
+.cont li {
+    list-style: none;
+    font-size: 30px;
+}
+
+li .box {
+    position: absolute;
+    display: none;
+    transition: all 2s;
+}
+
+li:hover .box {
+    display: block;
+}
+
+
+.box {
+    text-align: center;
+    height: 450px;
+    width: 450px;
+    border: 2px solid gray;
+    position: relative;
+    border-radius: 10%;
+    background-image: linear-gradient(0deg, #92cff2, #80D0C7, lightyellow);
+    box-shadow: 0px 0px 15px gray;
+}
+
+.box:hover body {}
+
+.box::before {
+    content: "";
+    position: absolute;
+    background: url('../img/home/logo.png')no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.4;
+    animation: img 3s ease-in infinite;
+}
+
+@keyframes img {
+    100% {
+        transform: rotateY(360deg);
+    }
+}

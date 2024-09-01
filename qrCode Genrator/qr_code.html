@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+	<h1>Enter Your Data Or Text and then press enter And Then Scan It</h1>
+
+	<input type="text" id="qr_data" onchange="ganrate()">
+	<div id="qrcode"></div>
+
+
+</body>
+<!-- link to qrlibaray -->
+<script type="text/javascript" src="qrcode.min.js"></script>
+<script type="text/javascript">
+	// storeing a data in a var
+	var qrdata = document.getElementById("qr_data")
+
+	// useing predefine word :- new QRCode 
+	var qrcode = new QRCode(document.getElementById("qrcode"));
+	function ganrate() {
+		// store a value in data
+		var data = qrdata.value;
+		// and in the last print the QRCode
+		qrcode.makeCode(data);
+	}
+</script>
+
+</html>

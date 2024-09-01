@@ -1,0 +1,55 @@
+		body
+		{
+			background-color: lightyellow;
+			color: red;
+			font-family: cursive;
+			bg
+		}
+		/*whole div padding*/
+		div
+		{
+			padding-top: 120px;
+		}
+		#rock
+		{
+			height: 170px;
+			width: 190px;
+			padding-right: 20px;
+			transition: 2s;
+			border-radius: 4px;
+
+		}
+		/*using a hover img*/
+		#rock:hover
+		{
+			height: 250px;
+			width: 280px;
+
+
+		}
+		#pepar
+		{
+			height: 170px;
+			width: 190px;
+			padding-right: 20px;
+			transition: 2s;
+		}
+		#pepar:hover
+		{
+			height: 250px;
+			width: 280px;
+
+		}
+		#sccior
+		{
+			height: 170px;
+			width: 190px;
+			padding-right: 20px;
+			transition: 2s;
+		}
+		#sccior:hover
+		{
+			height: 250px;
+			width: 280px;
+
+		}

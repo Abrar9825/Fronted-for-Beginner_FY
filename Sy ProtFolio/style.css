@@ -1,0 +1,663 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.nav {
+    display: flex;
+    width: 100%;
+    background-color: #303030;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+}
+
+.nav img {
+    width: 50px;
+    height: 50px;
+    margin-left: -250px;
+
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    margin: 20px;
+    list-style: none;
+    font-size: 18px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav ul li a:hover {
+    color: rgb(255, 140, 0);
+}
+
+/* Home Section */
+.home {
+    background-color: #2c2b2b;
+    height: 700px;
+    width: 100%;
+    display: block;
+    background: url("bg/homebg.png") no-repeat center center/cover;
+    border: 1px solid #2c2b2b;
+    transition: 6s;
+}
+
+.head {
+    margin-top: 230px;
+    margin-left: 200px;
+    font-size: 30px;
+}
+
+.home h3 {
+    color: gray;
+    font-size: 40px;
+}
+
+.home h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.home p {
+    background-color: darkorange;
+    margin-left: 200px;
+    color: white;
+    display: inline-block;
+
+}
+
+.home:hover {
+    background: url(bg/hombg1.png)no-repeat center center/cover;
+}
+
+/* About section */
+.about {
+    background: url("bg/aboutbg.png")no-repeat center center/cover;
+    height: 700px;
+    color: white;
+    transition: 3s;
+}
+
+.about:hover {
+    background: url("bg/aboutbg1.png")no-repeat center center/cover;
+
+}
+
+.about h1 {
+    color: darkorange;
+    padding-top: 110px;
+    font-size: 55px;
+    text-align: center;
+}
+
+.about .img {
+
+    background: url("img/about_logo_1.png")no-repeat center center/cover;
+    background-color: darkorange;
+    border-radius: 50%;
+    height: 300px;
+    width: 2000px;
+    margin-left: 230px;
+    padding-right: 10px;
+    animation-name: about;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes about {
+    to{
+        transform: rotateY(180deg);
+    background: url("img/about_logo.png")no-repeat center center/cover;
+
+    }
+    from{
+    background: url("img/about_logo_1.png")no-repeat center center/cover;
+    background-color: darkorange;
+
+
+    }
+    
+}
+.self {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+
+}
+
+.conte p {
+    width: 60%;
+    flex-direction: column;
+    word-wrap: break-word;
+    padding-left: 100px;
+}
+
+.icon {
+    margin-right: 63px;
+    margin-top: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon i {
+    padding-right: 20px;
+    border: 2px solid orange;
+    border-radius: 20%;
+    transition: 1s;
+}
+
+.icon i:hover {
+
+    border: 2px solid white;
+    color: orange;
+    font-size: 25px;
+
+}
+
+#ic {
+    padding-left: 20px;
+}
+
+/* skill Section */
+.skill {
+    background: url("bg/bg_skill1.png")no-repeat center center/cover;
+    height: 700px;
+    width: 100%;
+    transition: 3s;
+}
+
+.skill:hover {
+    background: url("bg/bg_skill.png")no-repeat center center/cover;
+}
+
+.skill h1 {
+    text-align: center;
+    padding-top: 87px;
+    font-size: 55px;
+    color: darkorange;
+}
+
+.main {
+    padding: 15px;
+    padding-right: 250px;
+}
+
+.bar {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.bar h2 {
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: white;
+}
+
+.one {
+    padding-right: 300px;
+}
+
+.outer {
+    border: 2px double orange;
+    background-color: darkgray;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.inner {
+    background-color: darkorange;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+
+#html {
+    animation-name: html;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+#c {
+    animation-name: c;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+#js {
+    animation-name: js;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+#sql {
+    animation-name: sql;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+#xml {
+    animation-name: xml;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+#css {
+    animation-name: css;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+#cpp {
+    animation-name: cpp;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+#ds {
+    animation-name: ds;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes html {
+    to {
+        background-color: rgb(249, 229, 160);
+        width: 0%;
+    }
+
+    from {
+        width: 89%;
+
+    }
+
+}
+
+@keyframes css {
+    to {
+
+        background-color: rgb(249, 229, 160);
+        width: 0%;
+    }
+
+    from {
+        width: 60%;
+
+    }
+
+}
+
+@keyframes js {
+    to {
+        background-color: rgb(249, 229, 160);
+        width: 0%;
+    }
+
+    from {
+        width: 40%;
+
+    }
+
+}
+
+@keyframes c {
+    to {
+        background-color: rgb(249, 229, 160);
+        width: 0%;
+    }
+
+    from {
+        width: 83%;
+
+    }
+
+}
+
+@keyframes sql {
+    to {
+        background-color: rgb(249, 229, 160);
+        width: 0%;
+    }
+
+    from {
+        width: 73%;
+
+    }
+
+}
+
+@keyframes xml {
+    to {
+        background-color: rgb(249, 229, 160);
+        width: 0%;
+    }
+
+    from {
+        width: 31%;
+
+    }
+}
+
+@keyframes cpp {
+    to {
+        background-color: rgb(249, 229, 160);
+        width: 0%;
+    }
+
+    from {
+        width: 34%;
+
+    }
+
+}
+
+@keyframes ds {
+    to {
+        background-color: rgb(249, 229, 160);
+        width: 0%;
+    }
+
+    from {
+        width: 40%;
+
+    }
+
+}
+
+/* Portfolio section */
+.Portfolio {
+    height: 700px;
+    width: 100%;
+    background: url("bg/Portfoliobg.png")no-repeat center center/cover;
+    transition: 3s;
+}
+
+.Portfolio:hover {
+    background: url("bg/Portfoliobg1.png")no-repeat center center/cover;
+
+}
+
+.Portfolio h1 {
+    text-align: center;
+    padding-top: 82px;
+    font-size: 55px;
+    color: darkorange;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+
+
+}
+
+.two {
+    margin-left: -200px;
+    margin-right: 90px;
+}
+
+.page img {
+    height: 200px;
+    width: 300px;
+    transition: 3s;
+    border-radius: 20px;
+    border: 4px double darkorange;
+
+
+}
+
+.page img:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px darkorange;
+}
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+
+}
+
+video {
+    height: 230px;
+    width: 330px;
+    border-radius: 20px;
+    border: 4px double darkorange;
+    transition: 3s;
+}
+
+.pages :hover {
+    transform: scale(1.1);
+}
+
+/* Servise Section */
+.servic h1 {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 60px;
+    color: darkorange;
+
+}
+
+.servic {
+    height: 700px;
+    width: 100%;
+    background: url("bg/serbg1.png") no-repeat center center/cover;
+    transition: 3s;
+    color: white;
+
+}
+
+.servic:hover {
+    background: url("bg/serbg2.png") no-repeat center center/cover;
+}
+
+.ser i {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.tech {
+    margin-top: 60px;
+    margin-left: 100px;
+    width: 300px;
+    text-align: center;
+    transition: 3s;
+    word-wrap: break-word;
+
+}
+
+.tech i {
+    margin-left: 120px;
+    color: darkorange;
+    transition: 3s;
+
+}
+
+.tech i:hover {
+    color: white;
+    font-size: 80px;
+}
+
+.tech:hover {
+    color: orange;
+}
+
+.help {
+    margin-top: -220px;
+    margin-left: 800px;
+    width: 300px;
+    text-align: center;
+    transition: 3s;
+
+}
+
+.help i {
+    margin-left: 120px;
+    color: darkorange;
+    transition: 3s;
+
+
+}
+
+.help i:hover {
+    color: white;
+    font-size: 80px;
+}
+
+.help:hover {
+    color: orange;
+}
+
+.lang {
+    margin-top: -30px;
+    margin-left: 450px;
+    width: 300px;
+    text-align: center;
+    transition: 3s;
+
+
+}
+
+.lang i {
+    margin-left: 120px;
+    color: darkorange;
+    transition: 3s;
+
+
+}
+
+.lang i:hover {
+    color: white;
+    font-size: 80px;
+    margin-left: 100px;
+
+}
+
+.lang:hover {
+    color: orange;
+
+}
+
+/* contact Section */
+#contact {
+    background: url("bg/contbg1.png")no-repeat center center/cover;
+    height: 700px;
+    width: 100%;
+    transition: 4s;
+}
+
+#contact:hover {
+    background: url("bg/contbg2.png")no-repeat center center/cover;
+
+}
+
+#contact h1 {
+    text-align: center;
+    padding-top: 63px;
+    font-size: 55px;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form label {
+    font-size: 30px;
+    color: white;
+    transition: 0.5s;
+
+}
+
+.form input {
+    padding-top: 10px;
+    width: 500px;
+    background-color: darkorange;
+    font-size: 16px;
+    color: white;
+    border: 2px double white;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+.form input:hover {
+    background-color: white;
+    color: darkorange;
+    border: 2px double darkorange;
+
+}
+
+.form label:hover {
+
+    color: darkorange;
+
+}
+
+button {
+    width: 200px;
+    margin-top: 20px;
+    color: white;
+    background-color: darkorange;
+    padding: 6px;
+    border-radius: 10px;
+    border: 2px double white;
+    transition: 0.5s;
+}
+
+button:hover {
+    color: darkorange;
+    background-color: white;
+    border: 2px double darkorange;
+}
+
+/* fotter Section */
+footer {
+    /* margin-top: 2px; */
+    font-size: 20px;
+    background-color: darkorange;
+    color: white;
+    text-align: center;
+}

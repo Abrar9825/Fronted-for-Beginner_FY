@@ -1,0 +1,259 @@
+        body {
+            background-color: lightyellow;
+            background: url("12.jpg")no-repeat center center/cover;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            animation: h1 5s ease-in-out 1;
+        }
+
+        @keyframes h1 {
+            0% {
+                margin-right: 800px;
+            }
+
+            25% {
+                transform: rotate(20deg);
+                color: rgb(132, 132, 205);
+            }
+
+            75% {
+                transform: rotateY(360deg);
+                color: rgb(154, 162, 167);
+
+
+            }
+
+            100% {
+                color: rgb(91, 236, 156);
+
+            }
+        }
+
+        .con {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            padding-left: -20px;
+        }
+
+        .first {
+            height: 300px;
+            border-radius: 50%;
+            width: 300px;
+            border-radius: 50%;
+            background-color: rgb(208, 196, 196);
+            border: 9px solid rgba(128, 103, 103, 0.438);
+            animation: first 3s ease-in 1;
+            transition: 2s;
+        }
+
+        .first:hover {
+            margin-bottom: 200px;
+            background: url("15.jpg")no-repeat center center/cover;
+
+
+        }
+
+        @keyframes first {
+            0% {
+                transform: rotateY(360deg);
+            }
+
+            100% {
+                background-color: lightsteelblue;
+            }
+
+        }
+
+
+        .second {
+            height: 300px;
+            border-radius: 50%;
+            width: 300px;
+            border-radius: 50%;
+            background-color: lightsteelblue;
+            border: 9px solid rgba(128, 103, 103, 0.438);
+            animation: second 3s ease-in 2.5s 1;
+            transition: 2s;
+
+        }
+
+        .second:hover {
+            margin-bottom: 200px;
+            background: url("13.jpg")no-repeat center center/cover;
+
+        }
+
+        @keyframes second {
+            0% {
+                transform: rotateY(360deg);
+            }
+
+            100% {
+                background-color: rgb(218, 150, 221);
+            }
+
+        }
+
+        .three {
+            height: 300px;
+            border-radius: 50%;
+            width: 300px;
+            border-radius: 50%;
+            background-color: rgb(218, 150, 221);
+            border: 9px solid gainsboro;
+            animation: second 3s ease-in 5s 1;
+            transition: 2s;
+
+
+        }
+
+        .three:hover {
+            margin-bottom: 200px;
+            background: url("14.jpg")no-repeat center center/cover;
+
+
+        }
+
+        @keyframes three {
+            0% {
+                transform: rotateY(360deg);
+            }
+
+            100% {
+                background-color: rgb(111, 214, 164);
+            }
+
+        }
+
+
+        .four {
+            height: 300px;
+            border-radius: 50%;
+            width: 300px;
+            border-radius: 50%;
+            background-color: rgb(111, 214, 164);
+            border: 9px solid gainsboro;
+            animation: second 3s ease-in 7.5s 1;
+            transition: 2s;
+
+
+        }
+
+        .four:hover {
+            margin-bottom: 200px;
+            background: url("16.jpg")no-repeat center center/cover;
+
+        }
+
+        @keyframes four {
+            0% {
+                transform: rotateY(360deg);
+            }
+
+            100% {
+                background-color: darkorange;
+            }
+
+        }
+
+        @media (max-width: 991px) {
+            body {
+                display: block;
+                background-color: green;
+                color: black;
+            }
+
+            .con {
+                display: block;
+            }
+
+
+        }
+
+        @media (max-width: 768px) {
+            body {
+                display: block;
+                background-color: red;
+                color: black;
+            }
+
+            .con {
+                display: block;
+            }
+
+            @keyframes first {
+                0% {
+                    transform: rotateX(360deg);
+                }
+
+                100% {
+                    background-color: lightsteelblue;
+                }
+
+            }
+
+            @keyframes second {
+                0% {
+                    transform: rotateY(360deg);
+                }
+
+                100% {
+                    background-color: rgb(218, 150, 221);
+                }
+
+            }
+
+            @keyframes second {
+                0% {
+                    transform: rotateX(360deg);
+                }
+
+                100% {
+                    background-color: rgb(218, 150, 221);
+                }
+
+            }
+
+            @keyframes three {
+                0% {
+                    transform: rotateX(360deg);
+                }
+
+                100% {
+                    background-color: rgb(111, 214, 164);
+                }
+
+            }
+
+            @keyframes four {
+                0% {
+                    transform: rotateX(360deg);
+                }
+
+                100% {
+                    background-color: darkorange;
+                }
+
+            }
+
+
+        }
+
+        @media (max-width: 450px) {
+            body {
+                background-color: blue;
+                font-size: 5px;
+            }
+
+            .con {
+                display: inline-block;
+                justify-content: center;
+                align-items: center;
+            }
+        }
